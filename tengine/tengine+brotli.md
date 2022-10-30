@@ -1,4 +1,4 @@
-# Only Tengine
+# Tengine + Brotli
 Auto install tengine in termius following https://medium.com/@agungsijawir/tengine-download-compile-install-5b7f4fddb941
 
 nginx.service have been replaced by tengine.service
@@ -22,5 +22,10 @@ nginx.service have been replaced by tengine.service
 `sudo systemctl start tengine.service && sudo systemctl enable tengine.service`  
 `curl -I 127.0.0.1`  
 `echo "Tengine Installed"`  
+
+## External
+https://github.com/alibaba/tengine
+
+https://github.com/google/ngx_brotli
 
 ## Thanks :D
