@@ -6,8 +6,8 @@ nginx.service have been replaced by tengine.service
 ## Snippet code
 `apt-get update && apt-get dist-upgrade -y && apt-get install sudo git -y`  
 `sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev libjemalloc-dev libatomic-ops-dev zlib1g-dev curl -y`  
-`git clone --branch master https://github.com/alibaba/tengine /tengine/tengine/`  
-`git clone --branch master https://github.com/google/ngx_brotli /tengine/modules/ngx_brotli/`  
+`git clone --recursive --branch master https://github.com/alibaba/tengine /tengine/tengine/`  
+`git clone --recursive --branch master https://github.com/google/ngx_brotli /tengine/modules/ngx_brotli/`  
 `cd /tengine/tengine/`  
 `./configure --with-jemalloc --with-libatomic --add-module=/tengine/modules/ngx_brotli/`  
 `make`  
