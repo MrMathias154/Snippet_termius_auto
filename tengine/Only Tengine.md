@@ -4,6 +4,7 @@ Auto install tengine in termius following https://medium.com/@agungsijawir/tengi
 nginx.service have been replaced by tengine.service
 
 ## Snippet code
+`apt-get update && apt-get dist-upgrade -y && apt-get install sudo git -y`  
 `sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev libjemalloc-dev libatomic-ops-dev zlib1g-dev curl -y`  
 `git clone --branch master https://github.com/alibaba/tengine /tengine/`  
 `cd /tengine/`  
